@@ -140,10 +140,10 @@ export default function Login() {
                   type="button"
                   className="btn btn-ghost btn-sm"
                   onClick={() => { setEmail(u.email); setPassword(u.password); }}
-                  style={{ justifyContent: 'flex-start', border: '1px solid rgba(255,255,255,0.1)' }}
+                  style={{ justifyContent: 'flex-start', border: '1px solid var(--border-secondary)' }}
                 >
-                  <span style={{ fontWeight: 500, color: 'var(--primary-400)', width: '70px', textAlign: 'left' }}>{u.role}</span>
-                  <span style={{ color: 'rgba(255,255,255,0.8)' }}>{u.email} / {u.password}</span>
+                  <span style={{ fontWeight: 500, color: 'var(--primary-600)', width: '70px', textAlign: 'left' }}>{u.role}</span>
+                  <span style={{ color: 'var(--text-secondary)' }}>{u.email} / {u.password}</span>
                 </button>
               ))}
             </div>
